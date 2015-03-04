@@ -1743,7 +1743,7 @@ WhatsApi.prototype.getMediaFile = function(filepath, filetype, callback) {
 	var onFileReady = function(path) {
 		var mimeType = mime.lookup(path);
 
-		if(this.mediaMimeTypes[filetype].mime.indexOf(mimeType) === -1) {
+		if(this.mediaMimeTypes[filetype].mime.indexOf(mimeType) === -1 && mimeType !== 'application/octet-stream') {
 			callback('Invalid file mime type: ' + mimeType);
 			return;
 		}
