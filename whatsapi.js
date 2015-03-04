@@ -57,7 +57,7 @@ WhatsApi.prototype.mediaMimeTypes = {};
 
 WhatsApi.prototype.mediaMimeTypes[MediaType.IMAGE] = {
 	size : 5 * 1024 * 1024,
-	mime : ['image/png', 'image/gif', 'image/jpeg']
+	mime : ['image/png', 'image/gif', 'image/jpeg', 'application/octet-stream']
 };
 
 WhatsApi.prototype.mediaMimeTypes[MediaType.VIDEO] = {
